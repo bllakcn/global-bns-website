@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import Layout from "./components/Layout/Layout";
 import { Montserrat } from "next/font/google";
 import Head from "next/head";
+import style from "./index.module.css";
 
 export const montserrat = Montserrat({
   subsets: ["latin"],
@@ -12,11 +13,13 @@ export const montserrat = Montserrat({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Head>
-        <title>Global BNS</title>
-      </Head>
-      <Component {...pageProps} />
-    </Layout>
+    <div className={`${style.cssBackground}`}>
+      <Layout>
+        <Head>
+          <title>Global BNS</title>
+        </Head>
+        <Component {...pageProps} />
+      </Layout>
+    </div>
   );
 }
