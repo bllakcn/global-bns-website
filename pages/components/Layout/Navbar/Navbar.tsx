@@ -12,7 +12,7 @@ const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <nav className="bg-primary-400 w-full text-primary-100 text-lg">
+    <nav className="bg-transparent sticky top-0 w-full text-primary-100 text-lg">
       <div className="max-w-7xl pt-4 pb-3 px-4 mx-auto flex justify-between items-baseline">
         <Link href="/">
           <h1 className="font-bold text-3xl sm:p-2 tracking-wider">
