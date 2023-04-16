@@ -1,9 +1,6 @@
 .cssBackground {
-  background-image: linear-gradient(
-      rgb(224, 225, 221, 0.1) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to right, rgb(224, 225, 221, 0.1) 1px, transparent 1px);
+  background-image: linear-gradient(#e0e1dd1a 1px, transparent 1px),
+    linear-gradient(to right, #e0e1dd1a 1px, transparent 1px);
   background-size: 25px 25px;
   background-color: #333333;
 }

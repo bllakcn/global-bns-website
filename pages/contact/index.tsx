@@ -4,7 +4,7 @@ const Contact = () => {
   const geoURL =
     "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json";
   return (
-    <main className="min-h-screen flex justify-center items-start pt-52 px-2 md:px-24 relative">
+    <main className="min-h-screen flex flex-col justify-start items-start pt-52 px-2 md:px-24">
       <div className="bg-primary-100 bg-opacity-90 w-full z-10 md:px-24 rounded-t-lg shadow-lg">
         <h1 className="font-bold text-4xl py-5">Contact</h1>
         <div>
@@ -14,15 +14,18 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      <div className="w-full absolute top-0">
+      <div className="w-full -mt-60">
         <ComposableMap>
-          <Geographies geography={geoURL}>
+          <Geographies
+            geography={geoURL}
+            className="fill-primary-100 opacity-50 stroke-secondary-100 stroke-[0.5px]"
+          >
             {({ geographies }) =>
               geographies.map((geo) => (
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  className="fill-primary-100 opacity-50 "
+                  className=" outline-none select-none"
                 />
               ))
             }
