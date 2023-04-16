@@ -4,8 +4,8 @@ const Contact = () => {
   const geoURL =
     "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json";
   return (
-    <main className="min-h-screen flex flex-col justify-start items-start pt-52 px-2 md:px-24">
-      <div className="bg-primary-100 bg-opacity-90 w-full z-10 md:px-24 rounded-t-lg shadow-lg">
+    <main className="min-h-screen flex flex-col justify-start items-start pt-52 px-2 md:px-24 max-w-7xl mx-auto">
+      <div className="bg-primary-100 bg-opacity-90 w-full z-10 md:px-24 p-2 rounded-t-lg shadow-lg">
         <h1 className="font-bold text-4xl py-5">Contact</h1>
         <div>
           <p>
@@ -14,7 +14,7 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      <div className="w-full -mt-60">
+      <div className="w-full -mt-60 hidden sm:block h-auto">
         <ComposableMap>
           <Geographies
             geography={geoURL}
