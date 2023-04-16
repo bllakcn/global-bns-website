@@ -15,7 +15,7 @@ export default function Home() {
           <Image
             src={earth}
             alt="earth"
-            className="hover:-translate-y-5 transition-all"
+            className="hover:-translate-y-5 hover:saturate-100 transition-all duration-200 saturate-50"
           />
         </div>
         {/* <div className="p-5 flex md:flex-col gap-5 w-1/3 flex-1">
