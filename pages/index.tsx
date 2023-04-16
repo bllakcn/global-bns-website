@@ -29,7 +29,7 @@ export default function Home() {
       </div> */}
         {/* <ServiceEarth /> */}
       </main>
-      <section className="relative">
+      <section>
         <ServicesSummary />
       </section>
     </>
