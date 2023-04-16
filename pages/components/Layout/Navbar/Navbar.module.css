@@ -18,14 +18,14 @@
   border: 0;
   margin: 0;
   overflow: visible;
-  --hamburger-color: #e0e1dd;
-  --hamburgerActive-color: #778da9;
+  /* --hamburger-color: rgb(27 38 59); */
+  /* --hamburgerActive-color: rgb(27 38 59); */
 }
-.hamburger.isActive .hamburgerInner,
+/* .hamburger.isActive .hamburgerInner,
 .hamburger.isActive .hamburgerInner::before,
 .hamburger.isActive .hamburgerInner::after {
   background-color: var(--hamburgerActive-color);
-}
+} */
 .hamburgerBox {
   width: 40px;
   height: 24px;
@@ -42,7 +42,7 @@
 .hamburgerInner::after {
   width: 40px;
   height: 3px;
-  background-color: var(--hamburger-color);
+  /* background-color: var(--hamburger-color); */
   border-radius: 4px;
   position: absolute;
   transition-property: transform;

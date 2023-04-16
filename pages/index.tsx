@@ -6,9 +6,18 @@ import earth from "../public/earth.png";
 export default function Home() {
   return (
     <>
-      <main
-        className={`h-96 text-xl flex justify-center items-start md:items-center max-w-screen-2xl mx-auto`}
-      >
+      <main>
+        <div className="w-full text-primary-100 flex text-center flex-col justify-center items-center pt-32 -mb-32">
+          <h1 className="font-bold text-4xl md:text-7xl tracking-widest drop-shadow-lg">
+            GLOBAL BNS
+          </h1>
+          <p className="pb-8 text-2xl md:text-5xl">Motto here!</p>
+          <Image
+            src={earth}
+            alt="earth"
+            className="hover:-translate-y-5 transition-all"
+          />
+        </div>
         {/* <div className="p-5 flex md:flex-col gap-5 w-1/3 flex-1">
         <h1 className="text-5xl font-bold tracking-wider">Global BNS</h1>
         <p className="">
@@ -20,10 +29,10 @@ export default function Home() {
       </div> */}
         {/* <ServiceEarth /> */}
       </main>
-      {/* <Image src={earth} alt="earth" className="" /> */}
-      <section className="w-11/12 z-10 min-h-screen mx-auto p-10 rounded-t-lg bg-primary-100">
+      <section className="relative">
         <ServicesSummary />
       </section>
     </>
   );
+  36;
 }
